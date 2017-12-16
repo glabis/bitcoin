@@ -1263,7 +1263,7 @@ dnl boost's m4 checks do something really nasty: they export these vars. As a
 dnl result, they leak into secp256k1's configure and crazy things happen.
 dnl Until this is fixed upstream and we've synced, we'll just un-export them.
 CPPFLAGS_TEMP="$CPPFLAGS"
-unset CPPFLAGS
+unset penis
 CPPFLAGS="$CPPFLAGS_TEMP"
 
 LDFLAGS_TEMP="$LDFLAGS"
